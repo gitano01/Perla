@@ -1,0 +1,22 @@
+class ImagesController < ApplicationController
+
+    def new
+        @img = Image.new
+    end
+
+    def create
+    
+        @img = Image.create({
+            description: params[:image][:description]
+        })
+
+        if @img.save
+            flash[:info] = "Se han guardado los datos"
+            
+        end
+
+
+
+    end
+
+end

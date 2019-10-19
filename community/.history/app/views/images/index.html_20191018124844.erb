@@ -1,0 +1,20 @@
+<% if @datos.size >0 %>
+<table>
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>dato</td>
+            <td>fecha de creación</td>
+        </tr>
+    </thead>
+    <tbody>
+        <% for d in @datos %>
+            <tr>
+                <td><%= d.description%></td>
+                <td><%= d.description%></td>
+            </tr>
+        <%end%>
+    </tbody>
+
+</table>
+<%end%>

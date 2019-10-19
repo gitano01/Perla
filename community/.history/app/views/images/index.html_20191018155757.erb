@@ -1,0 +1,25 @@
+<% if @datos.size >0 %>
+<table>
+    <thead>
+        <tr>
+            <td>Id</td>
+            <td>dato</td>
+            <td>fecha de creación</td>
+        </tr>
+    </thead>
+    <tbody>
+        <% for d in @datos %>
+            <tr>
+                <td><%= d.id%></td>
+                <td><%= d.description%></td>
+                <td><%= d.created_at%></td>
+                
+                <td><%=link_to "Ver", :id => d.id%></td>
+            </tr>
+        <%end%>
+    </tbody>
+
+</table>
+<%else%>
+<div><p>No hay elementos registrados</p></div>
+<%end%>

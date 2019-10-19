@@ -1,0 +1,8 @@
+<%= form_tag ({:action => :update}) do %>
+    <%= label :image,'descripcion'%>
+    
+    <%= text_field :image, @dato.description %>
+    <%= submit_tag 'ACTUALIZAR'%>
+
+
+<%end%>
