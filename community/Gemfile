@@ -27,7 +27,7 @@ end
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
-gem 'devise', '4.6.2'
+gem 'devise', '4.7.1'
 
 gem 'wdm', '0.1.1' if Gem.win_platform?
 gem 'rails4-autocomplete', '1.1.1'
